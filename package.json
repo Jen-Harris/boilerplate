@@ -1,0 +1,45 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "boiler plate file structure ",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tape ./tests/test.js | tap-spec",
+    "coverage": "istanbul cover tape -- -R spec ./tests/test.js && codecov",
+    "start:watch": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
+    "build": "node ./src/model/db_build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jen-Harris/boilerplate.git"
+  },
+  "author": "Jen Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jen-Harris/boilerplate/issues"
+  },
+  "homepage": "https://github.com/Jen-Harris/boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "env2": "^2.2.0",
+    "eslint": "^4.7.2",
+    "express": "^4.15.5",
+    "express-handlebars": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.12.1",
+    "pg": "^7.3.0",
+    "serve-favicon": "^2.4.4",
+    "shot": "^4.0.0",
+    "supertest": "^3.0.0",
+    "tap-diff": "^0.1.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  },
+  "devDependencies": {
+    "tachyons": "^4.8.1"
+  }
+}
